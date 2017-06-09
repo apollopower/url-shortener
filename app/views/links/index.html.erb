@@ -19,7 +19,7 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link.original_url %></td>
-        <td><%= link.short_url %></td>
+        <td>https://peaceful-eyrie-47753.herokuapp.com/<%= link.short_url %></td>
         <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
